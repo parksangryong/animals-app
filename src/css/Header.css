@@ -1,0 +1,115 @@
+#header {
+  width: 100%;
+  height: 100px;
+  background-color: yellowgreen;
+}
+
+#header ul {
+  float: left;
+  margin-top: 30px;
+  margin-left: 5%;
+}
+
+#header ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+#header ul li button {
+  width: 80px;
+  height: 40px;
+  background-color: palevioletred;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+
+#header ul li button:hover {
+  background-color: red;
+}
+
+.search {
+  float: right;
+}
+
+.search input {
+  float: left;
+  width: 60%;
+  margin: 30px 1% 0 0;
+  height: 40px;
+  background-color: bisque;
+  border: none;
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+.search button {
+  float: right;
+  margin: 30px 15% 0 0;
+  width: 100px;
+  height: 40px;
+  background-color: brown;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+
+#header ul li button.active {
+  background-color: blueviolet;
+}
+
+@media screen and (max-width: 840px) {
+  #header ul {
+    width: 40%;
+    margin-left: 3%;
+  }
+
+  #header ul li {
+    margin-right: 3%;
+  }
+
+  #header ul li button {
+    width: 15%;
+    height: 40px;
+    font-size: 0.7em;
+  }
+
+  .search {
+    width: 55%;
+  }
+
+  .search input {
+    width: 60%;
+    margin: 30px 1% 0 0;
+    font-size: 20px;
+  }
+
+  .search button {
+    margin: 30px 15% 0 0;
+    width: 10%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #header ul li button {
+    width: 27%;
+    height: 40px;
+    font-size: 0.5em;
+  }
+
+  .search {
+    width: 55%;
+  }
+
+  .search input {
+    width: 50%;
+    font-size: 20px;
+  }
+
+  .search button {
+    margin: 30px 15% 0 0;
+    width: 20%;
+  }
+}
